@@ -1,0 +1,24 @@
+<main class="main-container">
+  <app-demo
+    (loggedIn)="checkIfLoggedIn()"
+    *ngIf="!logged; else aboutMePage"
+  ></app-demo>
+
+  <ng-template #aboutMePage>
+    <button (click)="updatePage()" *ngIf="!aboutMe">ABOUT ME</button>
+    <div class="myInfo" *ngIf="aboutMe">
+      <h2>This is all about me.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit delectus accusantium necessitatibus quae reprehenderit ut ad quisquam minus tempore, explicabo, praesentium est consequatur voluptate! Ipsa adipisci tempora numquam non.
+      Dolor eligendi eveniet commodi blanditiis doloribus totam quisquam ducimus, quidem sed, voluptas ea aut sequi nobis praesentium doloremque optio similique, possimus nam officiis tempora repellendus tenetur asperiores. Doloribus, eum quam!
+      Alias corporis quam quia, architecto labore voluptate quasi, ea totam libero assumenda ipsam tempora laborum ducimus mollitia quidem fuga tenetur consequatur beatae. Quo saepe consequatur et aspernatur veritatis illo rem!
+      Officia sequi facere consequuntur voluptatum, inventore itaque illum at, nulla similique debitis sed minus animi voluptates odit soluta saepe molestiae dolor accusantium veritatis ex neque assumenda deserunt? Iusto, id sit.
+      Molestiae modi excepturi eos temporibus eum, odio quia incidunt iure! Commodi incidunt quas officiis sed, illum illo qui, delectus, quos aperiam vel est rerum cupiditate odit. Modi alias ad nemo?
+      Ratione corrupti iure accusantium atque repellendus esse dolor corporis reprehenderit aliquam, quibusdam provident itaque similique explicabo. Ullam praesentium perspiciatis perferendis quos, quae eligendi, autem sapiente labore repellat explicabo ea dolore.
+      Similique sed, recusandae libero laboriosam fuga reiciendis reprehenderit laborum quam quod alias aspernatur perferendis maxime tempora nulla nostrum dolorum quis minima, aliquam atque sit ab itaque perspiciatis. Voluptates, incidunt enim?
+      Deleniti reiciendis quidem, commodi enim, ratione corrupti, unde consequatur itaque nam aut quae alias ipsa aperiam sed! Ullam dolorem incidunt repellat illo minus veniam repellendus voluptatem animi ad, omnis amet.
+      Maxime numquam inventore quam eius nemo, quae at alias sit, assumenda in officia. Nisi minus obcaecati doloremque placeat maiores nulla nemo praesentium provident, dolor debitis dicta, ratione ex quod sit.
+      Omnis animi doloremque rem aspernatur nulla pariatur et qui? Doloremque quae deleniti cupiditate ut exercitationem. A, esse minus? Delectus eaque nam sequi voluptatem fugiat cum hic culpa quo doloremque fugit.</p>
+      
+    </div>
+  </ng-template>
+</main>
